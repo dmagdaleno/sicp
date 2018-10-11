@@ -1,4 +1,7 @@
 FROM ubuntu:16.04
 MAINTAINER dmagdaleno
-VOLUME C:\dev\study\sicp\code:/tmp
-RUN apt-get update && apt-get install mit-scheme -y
+RUN mkdir /home/work/ && \
+    apt-get update && \
+    apt-get install -y --force-yes mit-scheme && \
+    apt-get install -y --force-yes vim
+VOLUME /home/work/
