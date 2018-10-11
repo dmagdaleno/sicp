@@ -1,5 +1,9 @@
-docker build . -t dmagdaleno/scheme:v1
+docker build docker -t dmagdaleno/scheme:v1
 
 # Linux
 docker run -it --rm --volume=/home/dmagdaleno/work/sicp/volume:/home/work/ dmagdaleno/scheme:v1 bash
+mit-scheme
+
+# Windows
+docker run -it --rm --volume=C:\dev\study\sicp\volume:/home/work/ dmagdaleno/scheme:v1 bash
 mit-scheme
