@@ -3,7 +3,7 @@
       b
       (inc (+ (dec a) b))))
 
-; recursive process
+;> recursive process
 
 
 (define (+ a b)
@@ -11,4 +11,4 @@
       b
       (+ (dec a) (inc b))))
 
-; iterative process
+;> iterative process
